@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_12_27_155000) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "timestamps", force: :cascade do |t|
     t.integer "unix_timestamp"
     t.datetime "created_at", precision: 6, null: false
