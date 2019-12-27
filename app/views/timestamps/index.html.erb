@@ -1,0 +1,9 @@
+<h1>Timestamps</h1>
+
+<table>
+  <% @timestamps.each do |timestamp| %>
+    <tr>
+      <td><%= DateTime.strptime(timestamp.unix_timestamp.to_s, '%s') %></td>
+    </tr>
+  <% end %>
+</table>
