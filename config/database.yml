@@ -21,5 +21,4 @@ test:
   database: db/timestamper
 
 production:
-  <<: *default
-  database: $DATABASE_URL
+  url: <%= ENV['DATABASE_URL'] %>
